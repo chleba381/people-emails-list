@@ -46,7 +46,11 @@ table, th, tr, td {
   	border: 2px solid;
 }
 
-table { width:300px; }
+table { 
+
+	width:300px;
+
+	 }
 
 .form-div{
 
