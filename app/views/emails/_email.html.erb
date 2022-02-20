@@ -1,0 +1,13 @@
+<div id="<%= dom_id email %>" class="show-instance">
+  <div class="flexbox-container">
+    <div class="flexbox-left">
+      <strong><%= email.name %></strong>
+    </div>
+    
+    <div class="flexbox-person">
+      Uživatel: <%= link_to "#{email.person.name} #{email.person.surname}", person_path(email.person_id) %>
+    </div>
+
+  </div>
+
+</div>

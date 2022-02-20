@@ -1,0 +1,55 @@
+.flexbox-container {
+
+	display: flex;
+	margin: 10px;
+
+
+
+}
+
+.move-right {
+
+	margin-left: 20px;
+
+}
+
+.flexbox-person {
+
+	margin-left: 200px;
+
+}
+
+.flexbox-emails {
+
+	margin-left: 125px;
+
+}
+
+.flexbox-left {
+
+	margin-left: 5px;
+
+}
+
+.show-instance {
+
+	background-color: #F0FFFF;
+	width: 700px;
+	border-radius: 25px;
+	border: 2px solid;
+	padding: 4px;
+
+}
+
+table, th, tr, td {
+	padding: 3px;
+  	border: 2px solid;
+}
+
+table { width:300px; }
+
+.form-div{
+
+	margin-left: 10px;
+
+}

@@ -1,0 +1,39 @@
+<div id="<%= dom_id person %>" class="show-instance flexbox-container">
+  <div class="flexbox-left">
+    <strong>Jméno:</strong>
+    <%= person.name %>
+    <%= person.surname %>
+    
+  </div>
+
+  
+
+
+<% unless current_page?('/') || current_page?('/people') %> 
+  
+  <% if person.emails.count > 0 %>
+    <div class="flexbox-emails" >
+      <table style="margin-top: 10px; margin-bottom: 10px;">
+        <tr>
+          <th>Emaily uživatele</th>
+        </tr>
+      
+      <% person.emails.each do |email| %>
+        <tr>
+          <td>
+            <%= link_to email.name, email_path(email) %>
+          </td>
+        </tr>
+      <% end %>   
+      </table>
+    </div>
+  <% else %>
+    <div class="flexbox-emails">
+      Uživatel nemá žádné emaily
+    </div>
+  <% end %>
+<% end %>
+
+
+
+</div>

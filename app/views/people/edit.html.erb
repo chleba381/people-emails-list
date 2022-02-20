@@ -1,0 +1,9 @@
+<h1>Upravit osobu <%= @person.name %> <%= @person.surname %></h1>
+
+<%= render "form", person: @person %>
+
+
+  <div class="flexbox-container">
+    <%= link_to "<< Zpět", :back, class:"btn btn-outline-dark" %>
+  </div> 
+

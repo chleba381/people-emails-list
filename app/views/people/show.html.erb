@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @person %>
+
+
+
+<div class="flexbox-container">
+  <div>
+    <%= link_to "Upravit tuto osobu", edit_person_path(@person), class:"btn btn-outline-dark" %>
+  </div>
+  <div class="move-right">
+    <%= link_to "Přidat této osobě email", new_email_path(:id => @person.id), class:"btn btn-outline-dark" %>
+  </div>
+  <div class="move-right">
+    <%= link_to "Zpět na seznam osob", people_path, class:"btn btn-outline-dark" %>
+  </div>
+  <div class="move-right">
+    <%= button_to "Odstranit tuto osobu", @person, method: :delete, class:"btn btn-outline-danger" %>
+  </div>
+</div>

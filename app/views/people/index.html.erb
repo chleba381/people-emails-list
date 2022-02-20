@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Seznam osob</h1>
+
+<%= link_to "Přidat osobu", new_person_path, class:"btn btn-outline-success" %>
+
+<div id="people">
+  <% @people.each do |person| %>
+    <%= render person %>
+    <div class="flexbox-container">
+      <div>
+        <%= link_to "Ukázat tuto osobu", person, class:"btn btn-outline-dark" %>
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
