@@ -2,6 +2,12 @@
 
 <h1>Seznam Emailů</h1>
 
+<div class="flexbox-container">
+  <div>
+    <%= link_to "Zobrazit všechny osoby", people_path, class:"btn btn-outline-dark" %>
+  </div>
+</div>
+
 <div id="emails" class="list-item">
   <% @emails.each do |email| %>
     <%= render email %>
