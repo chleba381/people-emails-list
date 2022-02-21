@@ -5,10 +5,9 @@
 <div id="emails">
   <% @emails.each do |email| %>
     <%= render email %>
-    <p>
-      <%= link_to "Show this email", email %>
-    </p>
+    <div style="margin: 10px;">
+      <%= link_to "Show this email", email, class:"btn btn-outline-dark" %>
+    </div>
   <% end %>
 </div>
 
-<%= link_to "New email", new_email_path %>
