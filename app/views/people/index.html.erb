@@ -2,9 +2,16 @@
 
 <h1>Seznam osob</h1>
 
-<%= link_to "Přidat osobu", new_person_path, class:"btn btn-outline-success" %>
+<div class="flexbox-container" style="margin-bottom: 30px;">
+  <div>
+    <%= link_to "Přidat osobu", new_person_path, class:"btn btn-outline-success" %>
+  </div>
+  <div class="move-right">
+    <%= link_to "Zobrazit všechny emaily", emails_path, class:"btn btn-outline-dark" %>
+  </div>
+</div>
 
-<div id="people">
+<div id="people" class="list-item">
   <% @people.each do |person| %>
     <%= render person %>
     <div class="flexbox-container">

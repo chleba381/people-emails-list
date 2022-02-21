@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="form-div"> 
+  <div class="form-div show-instance"> 
     <div class="field form-group">
       <%= form.label "Jméno", style: "display: block" %>
       <%= form.text_field :name, class:"form-control" %>
@@ -22,8 +22,9 @@
       <%= form.text_field :surname, class:"form-control" %>
     </div>
 
-    <div style="margin-top: 15px;">
-      <%= form.submit "Přidat", class:"btn btn-outline-success" %>
+    <div style="margin-top: 15px;" class="move-right">
+      <%= form.submit "Potvrdit", class:"btn btn-outline-success" %>
     </div>
   </div>
+
 <% end %>

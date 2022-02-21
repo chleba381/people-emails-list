@@ -1,7 +1,9 @@
 <h1>Upravit email(<%= @email.name %>) osoby <%= @email.person.name %> <%= @email.person.surname %></h1>
 
-<%= render "form", email: @email %>
+<div class="list-item">
+  <%= render "form", email: @email %>
 
-  <div class="flexbox-container">
-    <%= link_to "<< Zpět", :back, class:"btn btn-outline-dark" %>
-  </div>
+    <div class="flexbox-container">
+      <%= link_to "<< Zpět", :back, class:"btn btn-outline-dark" %>
+    </div>
+</div>

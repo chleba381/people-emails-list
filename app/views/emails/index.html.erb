@@ -1,12 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Emails</h1>
+<h1>Seznam Emailů</h1>
 
-<div id="emails">
+<div id="emails" class="list-item">
   <% @emails.each do |email| %>
     <%= render email %>
     <div style="margin: 10px;">
-      <%= link_to "Show this email", email, class:"btn btn-outline-dark" %>
+      <%= link_to "Ukázat tento email", email, class:"btn btn-outline-dark" %>
     </div>
   <% end %>
 </div>

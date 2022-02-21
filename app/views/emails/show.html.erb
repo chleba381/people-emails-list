@@ -1,15 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @email %>
+<div class="list-item">
+  <%= render @email %>
  
-<div class="flexbox-container">
-  <div>
-    <%= link_to "Upravit tento email", edit_email_path(@email), class:"btn btn-outline-dark" %>
-  </div>
-  <div class="move-right">
-    <%= link_to "<< Zpět", :back, class:"btn btn-outline-dark" %>
-  </div>
-  <div class="move-right">
-    <%= button_to "Odstranit tento email", @email, method: :delete, class:"btn btn-outline-danger" %>
+  <div class="flexbox-container">
+    <div>
+      <%= link_to "Upravit tento email", edit_email_path(@email), class:"btn btn-outline-dark" %>
+    </div>
+    <div class="move-right">
+      <%= link_to "<< Zpět", :back, class:"btn btn-outline-dark" %>
+    </div>
+    <div class="move-right">
+      <%= button_to "Odstranit tento email", @email, method: :delete, class:"btn btn-outline-danger" %>
+    </div>
   </div>
 </div>
